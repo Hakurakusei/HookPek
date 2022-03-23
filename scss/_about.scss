@@ -1,0 +1,475 @@
+.mv2 {
+
+    &__body{
+
+        background-image: url(img/top-bg1-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0% 100%;
+        
+        & .about{
+
+            background-image: url(../img/about-mv.png);
+
+        }
+
+    }
+    
+}
+
+// ペイントセクション
+.paint {
+
+    padding-top: 80px;
+    @media screen and(max-width:1200px) {
+        padding-top: 150px;
+    }
+
+    background-image: url(img/top-bg1-3.png);
+    background-position: 70% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__inner{
+
+        margin: 0 auto;
+        max-width: 1140px;
+        width: 100%;
+        @media screen and(max-width:1200px) {
+            max-width: initial;
+            width: 90%;
+        }
+
+    }
+
+    &__contents{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-top: 50px;
+        width: 100%;
+        
+
+    }
+
+    &__content{
+
+        overflow: hidden;
+        max-width: 540px;
+        border-radius: 30px;
+        width: 100%;
+        @media screen and(max-width:1200px) {
+            max-width: initial;
+            width: 100%;
+        }
+        
+
+        &:nth-of-type(odd){
+            margin-right: 32px;
+            margin-bottom: 32px;
+            @media screen and(max-width:1200px) {
+                margin-right: initial;
+                margin-bottom: initial;
+                margin-bottom: 30px;
+            }
+        }
+        &:nth-of-type(even){
+            margin-bottom: 32px;
+            @media screen and(max-width:1200px) {
+                margin-bottom: initial;
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+
+    &__title{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        background-color: #B89C7D;
+        width: 100%;
+        height: 100px;
+        color: white;
+
+        & p{
+            &:nth-of-type(1){
+
+                font-size: 12px;
+
+            }
+
+            &:nth-of-type(2){
+
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__text-title{
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        font-size: 18px;
+        font-weight: bold;
+
+        background-image: linear-gradient(to right, var(--fontColor), var(--fontColor) 4px, transparent 2px, transparent 8px);
+        background-size: 10px 2px;
+        background-position: left bottom;
+        background-repeat: repeat-x;
+
+        & p{
+            & img{
+                position: absolute;
+            }
+        }
+    }
+
+    &__text{
+
+        padding: 20px;
+        background-color: white;
+        height: 100%;
+
+        & ul{
+
+            margin-top: 20px;
+            list-style: none;
+
+            & li{
+
+                font-size: 14px;
+                line-height: 25px;
+
+            }
+        }
+    }
+}
+
+.rajikaru{
+    background-color: #9E8578;
+}
+
+.husso{
+    background-color: #745E53;
+}
+
+.muki{
+    background-color: #4D382D;
+}
+
+
+// featureセクション
+.feature{
+
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    background-image: url(img/top-bg1-1.png);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &__inner{
+
+        margin: 0 auto;
+        max-width: 1140px;
+        width: 100%;
+
+        @media screen and(max-width:1200px) {
+            max-width: initial;
+        }
+        
+        
+
+    }
+
+    &__contents{
+
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    &__content{
+
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        height: 285px;
+
+        @media screen and(max-width:1200px) {
+
+            flex-flow: column;
+            align-items: center;
+            height:initial;
+        }
+
+        &:nth-of-type(odd){
+
+            & .feature__image{
+
+                background-position: 100% 50%;
+
+                @media screen and(max-width:1200px) {
+
+                    background-position: 50% 50%;
+                }
+            }
+        }
+        &:nth-of-type(even){
+
+            flex-flow: row-reverse;
+
+            @media screen and(max-width:1200px) {
+
+                flex-flow: column;
+            }
+            & .feature__image{
+
+                background-position: 0% 50%;
+
+                @media screen and(max-width:1200px) {
+
+                    background-position: 50% 50%;
+                }
+            }
+        }
+        
+    }
+
+    &__text{
+
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        width: 50%;
+        @media screen and(max-width:1200px) {
+            width: 90%;
+        }
+
+        & img{
+            width: 100%;
+            height: 50px;
+            object-fit: contain;
+            object-position: left;
+        }
+        
+    }
+
+    &__foot{
+
+        margin-top: 15px;
+
+        & p{
+            line-height: 30px;
+        }
+    }
+
+    &__image{
+
+        width: 50%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 30px;
+        @media screen and(max-width:1200px) {
+            width: 90%;
+            aspect-ratio: 1.666;
+            object-fit: contain;
+            margin-top: 20px;
+        }
+    }
+}
+
+.feature__img1{
+    background-image: url(../img/about-feature-image1.png);
+}
+
+.feature__img2{
+    background-image: url(../img/about-feature-image2.png);
+}
+
+.feature__img3{
+    background-image: url(../img/about-feature-image3.png);
+}
+
+.feature__img4{
+    background-image: url(../img/about-feature-image4.png);
+}
+
+.feature__img5{
+    background-image: url(../img/about-feature-image5.png);
+}
+
+
+// Philosophy、理念セクション
+.philosophy{
+
+    padding-top: 80px;
+    padding-bottom: 100px;
+    @media screen and(max-width:1200px) {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    
+    background-color: #F8F0E6;
+
+
+    
+
+    &__inner{
+
+        margin: 0 auto;
+        max-width: 1140px;
+        width: 100%;
+        @media screen and(max-width:1200px) {
+            max-width: initial;
+            width: 90%;
+        }
+    }
+
+    &__contents{
+
+        margin-top: 50px;
+    }
+
+    &__head{
+        display: flex;
+        @media screen and(max-width:1200px) {
+            flex-flow: column;
+
+        }
+    }
+
+    &__headR{
+
+        padding: 0px 40px;
+        @media screen and(max-width:1200px) {
+            padding: initial;
+        }
+        & p{
+            &:nth-of-type(1){
+
+                margin-bottom: 30px;
+                @media screen and(max-width:1200px) {
+                    margin-top: 40px;
+                }
+    
+            }
+            &:nth-of-type(2){
+
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &__foot{
+
+        display: flex;
+        @media screen and(max-width:1200px) {
+            flex-flow: column;
+        }
+        width: 100%;
+
+        margin-top: 80px;
+    }
+
+    &__footL{
+
+        width: 50%;
+        padding-right: 50px;
+        @media screen and(max-width:1200px) {
+            padding-right: initial;
+            width: 100%;
+        }
+
+        & p{
+            line-height: 25px;
+        }
+
+        .text-title{
+            padding-bottom: 20px;
+        }
+    }
+
+    &__footR{
+
+        position: relative;
+        width: 500px;
+        height: 100%;
+        @media screen and(max-width:1200px) {
+            padding-right: initial;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        & .text-title{
+
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 0px 20px;
+            background-color: #F8F0E6;
+
+        }
+        & ul{
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            height: 100%;
+            list-style: none;
+            border: 1px solid var(--fontColor);
+            border-radius: 25px;
+
+            padding-top: 40px;
+            @media screen and(max-width:1200px) {
+                padding-bottom: 20px;
+            }
+
+            & li{
+
+                line-height: 33px;
+
+                &:nth-of-type(even){
+                    width: 210px;
+                }
+                &:nth-of-type(odd){
+                    width: 220px;
+                }
+            }
+        }
+    }
+
+}
+
+.text-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact_BG{
+
+    background-image: url(img/top-bg1-3.png);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

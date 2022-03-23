@@ -1,0 +1,28 @@
+.section__title {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    &.center{
+        align-items: center;
+    }
+
+    & .en {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: Futura PT;
+    }
+    & .ja {
+      font-size: 32px;
+      font-weight: bold;
+      font-family: Zen Kaku Gothic New;
+      margin-top: 16px;
+      letter-spacing: 4px;
+    }
+    & .underLine {
+      width: 40px;
+      height: 2px;
+      background-color: var(--fontColor);
+      margin-top: 24px;
+    }
+  }

@@ -1,0 +1,41 @@
+@import "scss/header";
+@import "scss/footer";
+@import "scss/top";
+@import "scss/works";
+@import "scss/works-article";
+@import "scss/maintenance";
+@import "scss/outerwalls";
+@import "scss/roofpainting";
+@import "scss/company";
+@import "scss/sitemap";
+@import "scss/about";
+@import "scss/privacy";
+@import "scss/module/btn";
+@import "scss/module/section-title";
+@import "scss/module/breadcrumb";
+@import "scss/module/dropdown";
+
+body{
+    font-family: Zen Kaku Gothic New;
+    font-size: 1rem;
+    background-color: #F7F6F2;
+    color: var(--fontColor);
+    & a {
+        text-decoration: none;
+        color: var(--fontColor);;
+    }
+}
+main{
+    margin-top: 10px;
+}
+
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --fontColor: #4c4948;
+    --bgColor: #f8f0e6;
+    --btnColor: #745e53;
+  }
